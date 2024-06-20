@@ -13,6 +13,7 @@ class Program
         int minValue = 0;
         int maxValue = 10;
         int maxElement = int.MinValue;
+        int value = 0;
 
         for (int i = 0; i < matrix.GetLength(0); i++)
         {
@@ -46,7 +47,7 @@ class Program
             for (int j = 0; j < matrix.GetLength(1); j++)
             {
                 if (matrix[i, j] == maxElement)
-                    matrix[i, j] = 0;
+                    matrix[i, j] = value;
 
                 Console.Write(matrix[i, j] + " ");
             }
